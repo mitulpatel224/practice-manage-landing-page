@@ -15,7 +15,13 @@
   --VeryPaleRed: hsl(13, 100%, 96%);
   --VaryLightGray: hsl(0, 0%, 98%);
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
   font-weight: bold;
   color: var(--DarkBlue);
 }
@@ -29,13 +35,18 @@ p {
 }
 .btn.btn-primary {
   --bs-btn-bg: var(--BrightRed);
+  --bs-btn-hover-bg: var(--BrightRed);
   --bs-btn-border-color: var(--BrightRed);
+  --bs-btn-hover-border-color: var(--BrightRed);
 }
 img {
   width: 100%;
 }
 
 /** MOBILE VIEW: 375px **/
+.bg-pale-red {
+  background-color: var(--VeryPaleRed);
+}
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
