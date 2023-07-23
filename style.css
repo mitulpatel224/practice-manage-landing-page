@@ -1,0 +1,48 @@
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Be Vietnam Pro;
+}
+
+/* COLORS */
+:root {
+  --BrightRed: hsl(12, 88%, 59%);
+  --DarkBlue: hsl(228, 39%, 23%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --VeryDarkBlue: hsl(233, 12%, 13%);
+  --VeryPaleRed: hsl(13, 100%, 96%);
+  --VaryLightGray: hsl(0, 0%, 98%);
+}
+
+/* BUTTON */
+.btn {
+  --bs-btn-border-radius: 50px;
+}
+.btn.btn-primary {
+  --bs-btn-bg: var(--BrightRed);
+  --bs-btn-border-color: var(--BrightRed);
+}
+
+/* MOBILE VIEW: 375px */
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar .navbar-toggler {
+  --bs-border-width: 0;
+}
+.navbar .navbar-nav .nav-link {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* DESKTOP VIEW: 1440px */
+@media screen and (min-width: 1024px) {
+  .navbar .navbar-nav .nav-link {
+    text-align: left;
+    font-weight: normal;
+  }
+}
