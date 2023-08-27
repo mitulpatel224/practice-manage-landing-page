@@ -17,6 +17,13 @@
   --VaryLightGray: hsl(0, 0%, 98%);
   /* --bs-primary: var(--BrightRed); */
 }
+.bg-wrapper {
+  background-color: var(--VaryLightGray);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: top center;
+  background-image: url("/assets/images/bg-simplify-section-mobile.svg");
+}
 h1,
 h2,
 h3,
@@ -53,9 +60,7 @@ img {
 }
 
 /** MOBILE VIEW: 375px **/
-.bg-pale-red {
-  background-color: var(--VeryPaleRed);
-}
+
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -83,10 +88,45 @@ img {
 
 .about .about-feature .feature-header {
   border-radius: 50px 0 0 50px;
+  background-color: var(--VeryPaleRed);
 }
-.testimonials .carousel .carousel-inner {
-  padding-top: 50px;
+
+.carousel-inner {
+  padding-top: 40px;
 }
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
 .testimonials .card {
   background-color: var(--VaryLightGray);
   border: 0;
@@ -123,6 +163,9 @@ img {
 
 /** DESKTOP VIEW: 1440px **/
 @media screen and (min-width: 1024px) {
+  .bg-wrapper {
+    background-image: url("/assets/images/bg-simplify-section-desktop.svg");
+  }
   .navbar .navbar-nav .nav-link {
     text-align: left;
     font-weight: normal;
@@ -135,5 +178,13 @@ img {
   .hero .hero-content {
     max-width: 375px;
     text-align: left;
+  }
+
+  .about .about-feature .feature-header {
+    background-color: transparent;
+  }
+
+  .footer .social-menu li img {
+    height: 20px;
   }
 }

@@ -28,166 +28,172 @@
   </head>
   <body>
     <main>
-      <!-- HEADER SECTION: START -->
-      <!-- .navbar: wrapper class -->
-      <!-- .navbar-expand-lg: make the .navbar-collapse visible from lg -->
-      <nav class="navbar navbar-expand-lg">
-        <!-- .container: to give space on left and right -->
-        <div class="container">
-          <!-- .navbar-brand: for adding brand assets -->
-          <a class="navbar-brand" href="#">
-            <figure class="m-0">
-              <img src="assets/images/logo.svg" alt="manage-logo" />
-            </figure>
-          </a>
-          <!-- .navbar-toggler: to allow toggling .navbar-collapse -->
-          <!-- data-bs-: helps bootstrap JS to locate collapsible section -->
-          <button
-            class="navbar-toggler btn btn-transparent"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="assets/images/icon-hamburger.svg" alt="icon-hamburger" />
-          </button>
-          <!-- .navbar-collapse: to make collapsible menu -->
-          <!-- .collapse: to make menu default collapsed -->
-          <!-- #navbarSupportedContent: to mark this element for collapsible menu -->
-          <div
-            class="collapse navbar-collapse justify-content-between"
-            id="navbarSupportedContent"
-          >
-            <!-- .navbar-nav: Used for navigation menu -->
-            <!-- .flex-grow-1 justify-content-center: for centered align menu -->
-            <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center"
-            >
-              <!-- .nav-item: For individual items -->
-              <li class="nav-item">
-                <!-- .nav-link: For hyperlink of an individual items -->
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
-              </li>
-            </ul>
-            <button class="btn btn-primary d-none d-lg-block">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </nav>
-      <!-- HEADER SECTION: END -->
-
-      <!-- HERO SECTION: START -->
-      <section class="hero-wrapper mb-5">
-        <div class="container">
-          <div class="hero">
-            <div class="hero-image order-lg-2">
+      <div class="bg-wrapper">
+        <!-- HEADER SECTION: START -->
+        <!-- .navbar: wrapper class -->
+        <!-- .navbar-expand-lg: make the .navbar-collapse visible from lg -->
+        <nav class="navbar navbar-expand-lg">
+          <!-- .container: to give space on left and right -->
+          <div class="container">
+            <!-- .navbar-brand: for adding brand assets -->
+            <a class="navbar-brand" href="#">
               <figure class="m-0">
-                <img
-                  class="img d-block"
-                  src="assets/images/illustration-intro.svg"
-                  alt="illustration-intro"
-                />
+                <img src="assets/images/logo.svg" alt="manage-logo" />
               </figure>
-            </div>
-            <div
-              class="hero-content flex-fill d-md-flex flex-column justify-content-center align-items-center"
+            </a>
+            <!-- .navbar-toggler: to allow toggling .navbar-collapse -->
+            <!-- data-bs-: helps bootstrap JS to locate collapsible section -->
+            <button
+              class="navbar-toggler btn btn-transparent"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <h1>Bring everyone together to build better products.</h1>
-              <p>
-                Manage makes it simple for software teams to plan day-to-day
-                tasks while keeping the larger team goals in view.
-              </p>
-              <button class="btn btn-primary call-to-action">
+              <img
+                src="assets/images/icon-hamburger.svg"
+                alt="icon-hamburger"
+              />
+            </button>
+            <!-- .navbar-collapse: to make collapsible menu -->
+            <!-- .collapse: to make menu default collapsed -->
+            <!-- #navbarSupportedContent: to mark this element for collapsible menu -->
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarSupportedContent"
+            >
+              <!-- .navbar-nav: Used for navigation menu -->
+              <!-- .flex-grow-1 justify-content-center: for centered align menu -->
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 flex-grow-1 justify-content-center"
+              >
+                <!-- .nav-item: For individual items -->
+                <li class="nav-item">
+                  <!-- .nav-link: For hyperlink of an individual items -->
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary d-none d-lg-block">
                 Get Started
               </button>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- HERO SECTION: END -->
+        </nav>
+        <!-- HEADER SECTION: END -->
 
-      <!-- ABOUT SECTION: START -->
-      <section class="about">
-        <div class="container">
-          <div class="d-flex flex-column">
-            <div class="about-content">
-              <h3>What’s different about Manage?</h3>
-              <p>
-                Manage provides all the functionality your team needs, without
-                the complexity. Our software is tailor-made for modern digital
-                product teams.
-              </p>
-            </div>
-            <div class="about-feature-wrapper">
-              <div class="about-feature">
-                <div
-                  class="feature-header bg-pale-red d-flex justify-content-start align-items-center"
-                >
-                  <span class="badge rounded-pill bg-primary py-2 px-3"
-                    >01</span
-                  >
-                  <h6 class="px-2 flex-fill">Track company-wide progress</h6>
-                </div>
-                <p>
-                  See how your day-to-day tasks fit into the wider vision. Go
-                  from tracking progress at the milestone level all the way done
-                  to the smallest of details. Never lose sight of the bigger
-                  picture again.
-                </p>
+        <!-- HERO SECTION: START -->
+        <section class="hero-wrapper mb-5">
+          <div class="container">
+            <div class="hero">
+              <div class="hero-image order-lg-2">
+                <figure class="m-0">
+                  <img
+                    class="img d-block"
+                    src="assets/images/illustration-intro.svg"
+                    alt="illustration-intro"
+                  />
+                </figure>
               </div>
-              <div class="about-feature">
-                <div
-                  class="feature-header bg-pale-red d-flex justify-content-start align-items-center"
-                >
-                  <span class="badge rounded-pill bg-primary py-2 px-3"
-                    >02</span
-                  >
-                  <h6 class="px-2 flex-fill">Advanced built-in reports</h6>
-                </div>
+              <div
+                class="hero-content flex-fill d-md-flex flex-column justify-content-center align-items-center"
+              >
+                <h1>Bring everyone together to build better products.</h1>
                 <p>
-                  Set internal delivery estimates and track progress toward
-                  company goals. Our customisable dashboard helps you build out
-                  the reports you need to keep key stakeholders informed.
+                  Manage makes it simple for software teams to plan day-to-day
+                  tasks while keeping the larger team goals in view.
                 </p>
-              </div>
-              <div class="about-feature">
-                <div
-                  class="feature-header bg-pale-red d-flex justify-content-start align-items-center"
-                >
-                  <span class="badge rounded-pill bg-primary py-2 px-3"
-                    >03</span
-                  >
-                  <h6 class="px-2 flex-fill">
-                    Everything you need in one place
-                  </h6>
-                </div>
-                <p>
-                  Stop jumping from one service to another to communicate, store
-                  files, track tasks and share documents. Manage offers an
-                  all-in-one team productivity solution.
-                </p>
+                <button class="btn btn-primary call-to-action">
+                  Get Started
+                </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- ABOUT SECTION: END -->
+        </section>
+        <!-- HERO SECTION: END -->
 
+        <!-- ABOUT SECTION: START -->
+        <section class="about">
+          <div class="container">
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-lg-between gap-lg-5"
+            >
+              <div class="about-content px-5 px-lg-0 text-center text-lg-start">
+                <h3>What’s different about Manage?</h3>
+                <p>
+                  Manage provides all the functionality your team needs, without
+                  the complexity. Our software is tailor-made for modern digital
+                  product teams.
+                </p>
+              </div>
+              <div class="about-feature-wrapper">
+                <div class="about-feature">
+                  <div
+                    class="feature-header d-flex justify-content-start align-items-center"
+                  >
+                    <span class="badge rounded-pill bg-primary py-2 px-3"
+                      >01</span
+                    >
+                    <h6 class="px-2 flex-fill">Track company-wide progress</h6>
+                  </div>
+                  <p class="ms-lg-5">
+                    See how your day-to-day tasks fit into the wider vision. Go
+                    from tracking progress at the milestone level all the way
+                    done to the smallest of details. Never lose sight of the
+                    bigger picture again.
+                  </p>
+                </div>
+                <div class="about-feature">
+                  <div
+                    class="feature-header d-flex justify-content-start align-items-center"
+                  >
+                    <span class="badge rounded-pill bg-primary py-2 px-3"
+                      >02</span
+                    >
+                    <h6 class="px-2 flex-fill">Advanced built-in reports</h6>
+                  </div>
+                  <p class="ms-lg-5">
+                    Set internal delivery estimates and track progress toward
+                    company goals. Our customisable dashboard helps you build
+                    out the reports you need to keep key stakeholders informed.
+                  </p>
+                </div>
+                <div class="about-feature">
+                  <div
+                    class="feature-header d-flex justify-content-start align-items-center"
+                  >
+                    <span class="badge rounded-pill bg-primary py-2 px-3"
+                      >03</span
+                    >
+                    <h6 class="px-2 flex-fill">
+                      Everything you need in one place
+                    </h6>
+                  </div>
+                  <p class="ms-lg-5">
+                    Stop jumping from one service to another to communicate,
+                    store files, track tasks and share documents. Manage offers
+                    an all-in-one team productivity solution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ABOUT SECTION: END -->
+      </div>
       <!-- TESTIMONIAL SECTION: START -->
       <section class="testimonials">
         <div
@@ -199,7 +205,7 @@
             class="carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
+            <div class="carousel-indicators d-lg-none">
               <button
                 type="button"
                 data-bs-target="#carouselWrapper"
@@ -346,10 +352,12 @@
       <!-- GET STARTED SECTION: START -->
       <section class="banner">
         <div
-          class="container px-4 py-5 d-flex flex-column justify-content-center align-items-center text-center"
+          class="container px-4 py-5 d-flex flex-column justify-content-center align-items-center flex-lg-row justify-content-lg-between text-center text-lg-start"
         >
-          <h2 class="mb-3">Simplify how your team works today.</h2>
-          <button class="btn btn-primary btn-invert call-to-action mt-3">
+          <h2 class="mb-3 m-lg-0 col-lg-4">
+            Simplify how your team works today.
+          </h2>
+          <button class="btn btn-primary btn-invert call-to-action mt-3 m-lg-0">
             Get Started
           </button>
         </div>
@@ -359,8 +367,8 @@
       <!-- FOOTER SECTION: START -->
       <section class="footer">
         <div class="container py-5 px-4">
-          <div class="row">
-            <div class="col-12 mb-4">
+          <div class="row gx-lg-5">
+            <div class="col-12 col-lg-4 mb-4 order-1">
               <div class="d-flex">
                 <input
                   type="text"
@@ -370,7 +378,7 @@
                 <button type="button" class="btn btn-primary">GO</button>
               </div>
             </div>
-            <div class="col-12 mb-4">
+            <div class="col-12 col-lg-4 mb-4">
               <div class="d-flex justify-content-around">
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">Home</li>
@@ -385,7 +393,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 mb-4">
+            <div class="col-12 col-lg-4 mb-4 order-2">
               <ul class="social-menu nav d-flex justify-content-between">
                 <li class="nav-item">
                   <img src="/assets/images/icon-facebook.svg" alt="facebook" />
@@ -410,9 +418,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 mb-4">
+            <div class="col-12 col-lg-4 mb-4 order-first">
               <a class="navbar-brand" href="#">
-                <figure class="m-0 d-flex justify-content-center">
+                <figure class="m-0 d-flex justify-content-center d-lg-block">
                   <img
                     class="w-auto"
                     src="assets/images/logo.svg"
@@ -421,7 +429,7 @@
                 </figure>
               </a>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-lg-4 offset-lg-4 order-last">
               <p class="text-center m-0">Copyright 2022. All Rights Reserved</p>
             </div>
           </div>
@@ -435,5 +443,22 @@
       crossorigin="anonymous"
     ></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let items = document.querySelectorAll(".carousel .carousel-item");
+
+      items.forEach((el) => {
+        const minPerSlide = 3;
+        let next = el.nextElementSibling;
+        for (var i = 1; i < minPerSlide; i++) {
+          if (!next) {
+            // wrap carousel by using first child
+            next = items[0];
+          }
+          let cloneChild = next.cloneNode(true);
+          el.appendChild(cloneChild.children[0]);
+          next = next.nextElementSibling;
+        }
+      });
+    </script>
   </body>
 </html>
