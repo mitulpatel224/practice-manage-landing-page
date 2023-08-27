@@ -41,6 +41,13 @@ p {
   --bs-btn-border-color: var(--BrightRed);
   --bs-btn-hover-border-color: var(--BrightRed);
 }
+.btn.btn-invert {
+  --bs-btn-bg: var(--VaryLightGray);
+  --bs-btn-hover-bg: var(--VaryLightGray);
+  --bs-btn-border-color: var(--VaryLightGray);
+  --bs-btn-hover-border-color: var(--VaryLightGray);
+  --bs-btn-color: var(--BrightRed);
+}
 img {
   width: 100%;
 }
@@ -76,6 +83,38 @@ img {
 
 .about .about-feature .feature-header {
   border-radius: 50px 0 0 50px;
+}
+.testimonials .carousel .carousel-inner {
+  padding-top: 50px;
+}
+.testimonials .card {
+  background-color: var(--VaryLightGray);
+  border: 0;
+  box-shadow: hsl(0, 0%, 98%) 0px 0px 10px 1px;
+}
+.testimonials .card .card-avatar {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+.testimonials .card .card-avatar img {
+  height: 80px;
+  width: 80px;
+}
+
+.banner {
+  background-color: var(--BrightRed);
+}
+.banner h2 {
+  color: var(--VaryLightGray);
+}
+
+.footer {
+  background-color: var(--VeryDarkBlue);
+  color: var(--VaryLightGray);
+}
+.footer .social-menu li img {
+  height: 40px;
 }
 
 /** TABLET VIEW: 768px **/
